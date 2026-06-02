@@ -75,10 +75,10 @@ export default function HeroSection() {
           <div className="mt-8 flex w-full max-w-xl flex-col gap-3 sm:flex-row sm:justify-center">
             <a
               href="#"
-              className="relative inline-flex h-11 items-center justify-center rounded-full border border-transparent bg-[linear-gradient(#fff,#fff),linear-gradient(90deg,#d7c4b0_0%,#8fe7a8_52%,#67baff_100%)] bg-origin-border bg-clip-padding px-6 text-sm font-medium text-[#22202b] transition hover:bg-[linear-gradient(#fff,#fff),linear-gradient(90deg,#cebda8_0%,#84dea0_52%,#5eb2ff_100%)] after:pointer-events-none after:absolute after:-bottom-2 after:left-1/2 after:h-3 after:w-4/5 after:-translate-x-1/2 after:rounded-full after:bg-linear-to-r after:from-[#d7c4b0]/0 after:via-[#8fe7a8]/45 after:to-[#67baff]/0 after:blur-md"
+              className="inline-flex h-11 items-center justify-center rounded-full bg-[#2563eb] px-6 text-sm font-semibold text-white shadow-[0_8px_18px_rgba(37,99,235,0.3)] transition hover:bg-[#1d4ed8] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#93c5fd] focus-visible:ring-offset-2"
             >
               <span className="inline-flex items-center justify-center gap-2">
-                <span className="inline-flex h-5 w-5 items-center justify-center rounded-full bg-[#ececf1] text-[#2a2736]">
+                <span className="inline-flex h-5 w-5 items-center justify-center rounded-full bg-white/20 text-white">
                   <SiUnstop className="h-3.5 w-3.5" aria-hidden />
                 </span>
                 Sign Up

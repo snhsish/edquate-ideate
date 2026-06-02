@@ -23,33 +23,102 @@ export default function FooterSection() {
           </p>
         </div>
         <div>
-          <p className="font-semibold text-[#2c2837]">Event</p>
+          <p className="font-semibold text-[#2c2837]">Product</p>
           <ul className="mt-3 space-y-2">
-            <li>Overview</li>
-            <li>Schedule</li>
-            <li>FAQs</li>
+            <li>
+              <a href="https://edquate.com" className="hover:text-[#2c2837]">
+                Overview
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://edquate.com/register"
+                className="hover:text-[#2c2837]"
+              >
+                Sign Up
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://edquate.com/#features"
+                className="hover:text-[#2c2837]"
+              >
+                Features
+              </a>
+            </li>
           </ul>
         </div>
         <div>
           <p className="font-semibold text-[#2c2837]">Community</p>
           <ul className="mt-3 space-y-2">
-            <li>Campus Partners</li>
-            <li>Mentors</li>
-            <li>Sponsors</li>
+            <li>
+              <a
+                href="https://edquate.com/campus"
+                className="hover:text-[#2c2837]"
+              >
+                Campus Partners
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://edquate.com/redeeem"
+                className="hover:text-[#2c2837]"
+              >
+                Redeem
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://edquate.com/campus/application"
+                className="hover:text-[#2c2837]"
+              >
+                Partner Application
+              </a>
+            </li>
           </ul>
         </div>
         <div>
           <p className="font-semibold text-[#2c2837]">Contact</p>
           <ul className="mt-3 space-y-2">
-            <li>hello@edquate.com</li>
-            <li>+91 90000 00000</li>
-            <li>System status</li>
+            <li>
+              <a
+                href="mailto:support@edquate.com"
+                className="hover:text-[#2c2837]"
+              >
+                support@edquate.com
+              </a>
+            </li>
+            <li>
+              <a href="tel:+919330304037" className="hover:text-[#2c2837]">
+                +91 93303 04037
+              </a>
+            </li>
           </ul>
         </div>
       </div>
       <div className="mx-auto mt-8 flex w-full max-w-6xl flex-col gap-2 border-t border-[#ece9f4] pt-6 text-xs text-[#837d97] sm:flex-row sm:items-center sm:justify-between">
-        <p>Orcrys Technologies Pvt Ltd. Edquate 2026</p>
-        <p>Privacy Terms Report bug</p>
+        <p>
+          <a href="https://orcrys.com" className="hover:text-[#2c2837]">
+            Orcrys Technologies Pvt Ltd.
+          </a>
+        </p>
+        <p className="flex flex-wrap gap-x-4 gap-y-1">
+          <a
+            href="https://edquate.com/legal/privacy"
+            className="hover:text-[#2c2837]"
+          >
+            Privacy
+          </a>
+          <a
+            href="https://edquate.com/legal/terms"
+            className="hover:text-[#2c2837]"
+          >
+            Terms
+          </a>
+          <a href="mailto:bug@edquate.com" className="hover:text-[#2c2837]">
+            Report Bug
+          </a>
+        </p>
       </div>
     </footer>
   );
