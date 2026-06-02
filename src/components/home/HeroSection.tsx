@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import { SiUnstop } from "react-icons/si";
 
 const navLinkClassName =
@@ -45,15 +46,15 @@ export default function HeroSection() {
             />
           </div>
           <nav className="hidden items-center gap-8 text-sm tracking-[-0.01em] text-[#5e5a70] md:flex">
-            <a href="#info" className={navLinkClassName}>
+            <Link href="#info" className={navLinkClassName}>
               Info
-            </a>
-            <a href="#prizes" className={navLinkClassName}>
+            </Link>
+            <Link href="#prizes" className={navLinkClassName}>
               Prizes
-            </a>
-            <a href="#footer" className={navLinkClassName}>
+            </Link>
+            <Link href="#footer" className={navLinkClassName}>
               Contact
-            </a>
+            </Link>
           </nav>
         </header>
 
@@ -73,7 +74,7 @@ export default function HeroSection() {
             up, prototype fast, and pitch solutions that matter.
           </p>
           <div className="mt-8 flex w-full max-w-xl flex-col gap-3 sm:flex-row sm:justify-center">
-            <a
+            <Link
               href="#"
               className="inline-flex h-11 items-center justify-center rounded-full bg-[#2563eb] px-6 text-sm font-semibold text-white shadow-[0_8px_18px_rgba(37,99,235,0.3)] transition hover:bg-[#1d4ed8] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#93c5fd] focus-visible:ring-offset-2"
             >
@@ -83,13 +84,13 @@ export default function HeroSection() {
                 </span>
                 Sign Up for Ideathon
               </span>
-            </a>
-            <a
+            </Link>
+            <Link
               href="#info"
               className="relative inline-flex h-11 items-center justify-center px-2 text-sm font-medium text-[#2b2736] transition-colors duration-200 hover:text-[#1d1b21] after:absolute after:bottom-1 after:left-0 after:h-[2px] after:w-full after:origin-left after:scale-x-0 after:bg-[#1d1b21] after:transition-transform after:duration-300 after:content-[''] hover:after:scale-x-100 focus-visible:after:scale-x-100"
             >
               Event Info
-            </a>
+            </Link>
           </div>
         </div>
       </div>

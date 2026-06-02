@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { LuCalendarPlus } from "react-icons/lu";
 
 type InfoCard = {
@@ -104,7 +105,7 @@ export default function EventInfoSection({ cards }: EventInfoSectionProps) {
         ))}
       </div>
       <div className="mt-8 flex justify-center">
-        <a
+        <Link
           href={googleCalendarLink}
           target="_blank"
           rel="noopener noreferrer"
@@ -112,7 +113,7 @@ export default function EventInfoSection({ cards }: EventInfoSectionProps) {
         >
           <LuCalendarPlus className="h-4 w-4" aria-hidden />
           Add to Calendar
-        </a>
+        </Link>
       </div>
     </section>
   );
