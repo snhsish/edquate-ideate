@@ -58,8 +58,8 @@ export default function HeroSection() {
         </header>
 
         <div className="mx-auto flex max-w-3xl flex-col items-center text-center">
-          <span className="rounded-full border border-[#eadfff] bg-white/80 px-4 py-1 text-xs font-medium text-[#6c57a6]">
-            Ideathon launch season is here
+          <span className="rounded-full border border-[#eadfff] bg-white/80 px-4 py-1 text-sm font-medium text-[#6c57a6]">
+            IDEATHON
           </span>
           <h1 className="mt-6 text-balance text-4xl font-semibold leading-tight tracking-[-0.03em] md:text-6xl">
             Build your next big idea at{" "}
@@ -81,7 +81,7 @@ export default function HeroSection() {
                 <span className="inline-flex h-5 w-5 items-center justify-center rounded-full bg-white/20 text-white">
                   <SiUnstop className="h-3.5 w-3.5" aria-hidden />
                 </span>
-                Sign Up
+                Sign Up for Ideathon
               </span>
             </a>
             <a

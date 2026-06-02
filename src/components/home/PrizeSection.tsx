@@ -51,6 +51,18 @@ const tierStyles: Record<
   },
 };
 
+const shineClassByRank: Record<PodiumRank, string> = {
+  1: "prize-card-shine",
+  2: "prize-card-shine prize-card-shine--silver",
+  3: "prize-card-shine prize-card-shine--bronze",
+};
+
+const shineDelayByRank: Record<PodiumRank, string> = {
+  1: "0s",
+  2: "0.6s",
+  3: "1.2s",
+};
+
 const confettiPieces = [
   { left: "8%", delay: "0s", duration: "2.6s", drift: "-8px", color: "#ff6b6b" },
   { left: "18%", delay: "0.4s", duration: "3.1s", drift: "6px", color: "#ffd93d" },
@@ -74,6 +86,13 @@ function PodiumPrizeCard({ prize }: { prize: PodiumPrize }) {
     <article
       className={`relative flex flex-col justify-end overflow-hidden rounded-2xl border p-6 transition-transform duration-300 hover:scale-[1.02] ${tier.card} ${tier.size}`}
     >
+      <div
+        className={shineClassByRank[prize.rank]}
+        style={
+          { "--shine-delay": shineDelayByRank[prize.rank] } as CSSProperties
+        }
+        aria-hidden
+      />
       {isGold ? (
         <>
           <div
