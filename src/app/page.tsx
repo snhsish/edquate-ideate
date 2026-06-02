@@ -11,9 +11,9 @@ export default function Home() {
   ];
 
   const podiumPrizes = [
-    { position: "1st Place", title: "Prize to be decided" },
-    { position: "2nd Place", title: "Prize to be decided" },
-    { position: "3rd Place", title: "Prize to be decided" },
+    { position: "1st Place", title: "₹3,000", rank: 1 as const },
+    { position: "2nd Place", title: "₹2,000", rank: 2 as const },
+    { position: "3rd Place", title: "₹1,000", rank: 3 as const },
   ];
 
   const stickerPrizes = [

@@ -38,3 +38,49 @@ body {
   background-size: 200% 200%;
   animation: gradient-slide-ltr 3s linear infinite alternate;
 }
+
+@keyframes prize-gold-shimmer {
+  0% {
+    background-position: 200% center;
+  }
+  100% {
+    background-position: -200% center;
+  }
+}
+
+.prize-gold-shimmer {
+  background-size: 200% auto;
+  animation: prize-gold-shimmer 4s ease-in-out infinite;
+}
+
+@keyframes prize-confetti-fall {
+  0% {
+    transform: translate3d(0, -12px, 0) rotate(0deg);
+    opacity: 0;
+  }
+  12% {
+    opacity: 1;
+  }
+  100% {
+    transform: translate3d(var(--confetti-drift, 0px), 140px, 0) rotate(540deg);
+    opacity: 0;
+  }
+}
+
+.prize-confetti-piece {
+  position: absolute;
+  top: -4px;
+  width: 7px;
+  height: 11px;
+  border-radius: 1px;
+  pointer-events: none;
+  animation: prize-confetti-fall var(--confetti-duration, 2.8s) ease-in infinite;
+  animation-delay: var(--confetti-delay, 0s);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .prize-gold-shimmer,
+  .prize-confetti-piece {
+    animation: none;
+  }
+}
