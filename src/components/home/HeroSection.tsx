@@ -1,9 +1,5 @@
-import Image from "next/image";
 import Link from "next/link";
 import { SiUnstop } from "react-icons/si";
-
-const navLinkClassName =
-  "relative pb-1 font-medium transition-colors duration-200 hover:text-[#1d1b21] after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-full after:origin-left after:scale-x-0 after:bg-[#1d1b21] after:transition-transform after:duration-300 after:content-[''] hover:after:scale-x-100 focus-visible:after:scale-x-100";
 
 export default function HeroSection() {
   return (
@@ -35,29 +31,6 @@ export default function HeroSection() {
         aria-hidden
       />
       <div className="relative z-10">
-        <header className="mb-16 flex items-center justify-between">
-          <div className="flex items-center">
-            <Image
-              src="https://edquate.com/icons/1.png"
-              alt="Edquate logo"
-              className="h-8 w-8 rounded-md object-contain"
-              width={32}
-              height={32}
-            />
-          </div>
-          <nav className="hidden items-center gap-8 text-sm tracking-[-0.01em] text-[#5e5a70] md:flex">
-            <Link href="#info" className={navLinkClassName}>
-              Info
-            </Link>
-            <Link href="#prizes" className={navLinkClassName}>
-              Prizes
-            </Link>
-            <Link href="#footer" className={navLinkClassName}>
-              Contact
-            </Link>
-          </nav>
-        </header>
-
         <div className="mx-auto flex max-w-3xl flex-col items-center text-center">
           <span className="rounded-full border border-[#eadfff] bg-white/80 px-4 py-1 text-sm font-medium text-[#6c57a6]">
             IDEATHON
