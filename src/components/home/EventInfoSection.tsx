@@ -1,3 +1,5 @@
+import { LuCalendarPlus } from "react-icons/lu";
+
 type InfoCard = {
   label: string;
   value: string;
@@ -9,6 +11,21 @@ type EventInfoSectionProps = {
 
 export default function EventInfoSection({ cards }: EventInfoSectionProps) {
   const calendarDays = Array.from({ length: 30 }, (_, index) => index + 1);
+  const calendarDescription = [
+    "Ideate with Edquate: Ideathon",
+    "Date: 10th June 2026",
+    "Venue: Online",
+    "Website: https://ideathon.edquate.com",
+  ].join("\n");
+  const googleCalendarLink = `https://calendar.google.com/calendar/render?${new URLSearchParams(
+    {
+      action: "TEMPLATE",
+      text: "Ideate with Edquate: Ideathon",
+      dates: "20260610/20260611",
+      details: calendarDescription,
+      location: "Online",
+    }
+  ).toString()}`;
 
   return (
     <section id="info" className="scroll-mt-24">
@@ -85,6 +102,17 @@ export default function EventInfoSection({ cards }: EventInfoSectionProps) {
             )}
           </article>
         ))}
+      </div>
+      <div className="mt-8 flex justify-center">
+        <a
+          href={googleCalendarLink}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex items-center justify-center gap-2 rounded-full bg-black px-6 py-3 text-sm font-semibold text-white transition hover:bg-[#24212e]"
+        >
+          <LuCalendarPlus className="h-4 w-4" aria-hidden />
+          Add to Calendar
+        </a>
       </div>
     </section>
   );
