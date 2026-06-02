@@ -75,16 +75,18 @@ export default function HeroSection() {
           <div className="mt-8 flex w-full max-w-xl flex-col gap-3 sm:flex-row sm:justify-center">
             <a
               href="#"
-              className="inline-flex h-11 items-center justify-center gap-2 rounded-full bg-[#1d1b21] px-6 text-sm font-medium text-white transition hover:bg-[#34303f]"
+              className="relative inline-flex h-11 items-center justify-center rounded-full border border-transparent bg-[linear-gradient(#fff,#fff),linear-gradient(90deg,#d7c4b0_0%,#8fe7a8_52%,#67baff_100%)] bg-origin-border bg-clip-padding px-6 text-sm font-medium text-[#22202b] transition hover:bg-[linear-gradient(#fff,#fff),linear-gradient(90deg,#cebda8_0%,#84dea0_52%,#5eb2ff_100%)] after:pointer-events-none after:absolute after:-bottom-2 after:left-1/2 after:h-3 after:w-4/5 after:-translate-x-1/2 after:rounded-full after:bg-linear-to-r after:from-[#d7c4b0]/0 after:via-[#8fe7a8]/45 after:to-[#67baff]/0 after:blur-md"
             >
-              <span className="inline-flex h-5 w-5 items-center justify-center rounded-full bg-white/15">
-                <SiUnstop className="h-3.5 w-3.5" aria-hidden />
+              <span className="inline-flex items-center justify-center gap-2">
+                <span className="inline-flex h-5 w-5 items-center justify-center rounded-full bg-[#ececf1] text-[#2a2736]">
+                  <SiUnstop className="h-3.5 w-3.5" aria-hidden />
+                </span>
+                Sign Up
               </span>
-              Sign Up
             </a>
             <a
               href="#info"
-              className="inline-flex h-11 items-center justify-center rounded-full border border-[#d9d2eb] bg-white px-6 text-sm font-medium text-[#2b2736] transition hover:bg-[#f8f6fc]"
+              className="relative inline-flex h-11 items-center justify-center px-2 text-sm font-medium text-[#2b2736] transition-colors duration-200 hover:text-[#1d1b21] after:absolute after:bottom-1 after:left-0 after:h-[2px] after:w-full after:origin-left after:scale-x-0 after:bg-[#1d1b21] after:transition-transform after:duration-300 after:content-[''] hover:after:scale-x-100 focus-visible:after:scale-x-100"
             >
               Event Info
             </a>
