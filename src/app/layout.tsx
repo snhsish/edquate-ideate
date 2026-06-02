@@ -14,7 +14,8 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Ideate with Edquate",
-  description: "Launch landing page for the Ideate with Edquate ideathon.",
+  description:
+    "Your personal learning platform with tutor, roadmap, practice, and career guidance in one place",
 };
 
 export default function RootLayout({

@@ -8,6 +8,8 @@ type EventInfoSectionProps = {
 };
 
 export default function EventInfoSection({ cards }: EventInfoSectionProps) {
+  const calendarDays = Array.from({ length: 30 }, (_, index) => index + 1);
+
   return (
     <section id="info" className="scroll-mt-24">
       <div className="mb-6">
@@ -20,7 +22,7 @@ export default function EventInfoSection({ cards }: EventInfoSectionProps) {
         {cards.map((card) => (
           <article
             key={card.label}
-            className="rounded-2xl border border-[#e9e8ef] bg-white p-5 shadow-sm"
+            className="h-full rounded-2xl border border-[#e9e8ef] bg-white p-5 shadow-sm"
           >
             <p className="text-sm font-medium text-[#7a7491]">{card.label}</p>
             {card.label.toLowerCase() === "venue" ? (
@@ -32,7 +34,7 @@ export default function EventInfoSection({ cards }: EventInfoSectionProps) {
                   <iframe
                     title="Kolkata map preview"
                     src="https://www.openstreetmap.org/export/embed.html?bbox=88.2000%2C22.4500%2C88.5000%2C22.7000&layer=mapnik&marker=22.5726%2C88.3639"
-                    className="h-44 w-full border-0 opacity-25 pointer-events-none"
+                    className="h-52 w-full border-0 opacity-25 pointer-events-none"
                     loading="lazy"
                     aria-hidden
                     tabIndex={-1}
@@ -41,6 +43,39 @@ export default function EventInfoSection({ cards }: EventInfoSectionProps) {
                     className="pointer-events-none absolute inset-x-0 bottom-0 h-6 bg-white"
                     aria-hidden
                   />
+                </div>
+              </div>
+            ) : card.label.toLowerCase() === "date" ? (
+              <div className="mt-3 space-y-3">
+                <p className="text-sm font-semibold tracking-wide text-[#24212e]">
+                  10th June 2026
+                </p>
+                <div className="h-52 rounded-xl border border-[#e9e8ef] bg-[#fcfcfd] p-3">
+                  <p className="text-[11px] font-medium uppercase tracking-wide text-[#7a7491]">
+                    June 2026
+                  </p>
+                  <div className="mt-2 grid grid-cols-7 gap-1 text-center text-[10px] font-medium uppercase text-[#9a96ab]">
+                    {["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"].map(
+                      (day) => (
+                        <span key={day}>{day}</span>
+                      )
+                    )}
+                  </div>
+                  <div className="mt-2 grid grid-cols-7 gap-1 text-center text-xs font-medium text-[#3b3748]">
+                    <span aria-hidden className="rounded-md p-1" />
+                    {calendarDays.map((day) => (
+                      <span
+                        key={day}
+                        className={
+                          day === 10
+                            ? "rounded-md bg-black p-1 text-white"
+                            : "rounded-md p-1"
+                        }
+                      >
+                        {day}
+                      </span>
+                    ))}
+                  </div>
                 </div>
               </div>
             ) : (

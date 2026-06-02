@@ -18,8 +18,8 @@ export default function FooterSection() {
             />
           </div>
           <p className="mt-2 max-w-sm">
-            A launch ideathon for students and early builders to ship impactful
-            ideas in a single day.
+            Your personal learning platform with tutor, roadmap, practice, and
+            career guidance in one place
           </p>
         </div>
         <div>
