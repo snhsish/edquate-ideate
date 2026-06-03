@@ -167,11 +167,11 @@ export default function PrizeSection({
 
       <div className="mt-8 rounded-2xl border border-dashed border-[#ddd5ef] bg-white p-6">
         <h3 className="text-lg font-semibold text-[#2d2840]">
-          Goodies for everyone
+          Goodies for all winners
         </h3>
         <p className="mt-2 text-sm text-[#6a6480]">
-          All participants and runner-ups receive goodies. Category standouts
-          also earn special mentions below.
+          Podium teams and every category winner take home goodies. Special
+          mentions for each track are listed below.
         </p>
         <div className="mt-4 flex flex-wrap gap-2">
           {stickerPrizes.map((item) => (
