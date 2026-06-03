@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { SiUnstop } from "react-icons/si";
+import { FaExternalLinkAlt } from "react-icons/fa";
 
 export default function HeroSection() {
   return (
@@ -52,8 +52,8 @@ export default function HeroSection() {
               className="inline-flex h-11 items-center justify-center rounded-full bg-[#2563eb] px-6 text-sm font-semibold text-white shadow-[0_8px_18px_rgba(37,99,235,0.3)] transition hover:bg-[#1d4ed8] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#93c5fd] focus-visible:ring-offset-2"
             >
               <span className="inline-flex items-center justify-center gap-2">
-                <span className="inline-flex h-5 w-5 items-center justify-center rounded-full bg-white/20 text-white">
-                  <SiUnstop className="h-3.5 w-3.5" aria-hidden />
+                <span className="inline-flex h-5 w-5 items-center justify-center rounded-full">
+                  <FaExternalLinkAlt className="h-3.5 w-3.5" aria-hidden />
                 </span>
                 Sign Up for Ideathon
               </span>
