@@ -13,9 +13,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Ideate with Edquate",
+  title: "IDEATE 2026 | India's Largest Future Problem Solving Championship",
   description:
-    "Your personal learning platform with tutor, roadmap, practice, and career guidance in one place",
+    "IDEATE 2026 with Edquate. Five Grand Challenge tracks, E.D.G.E scoring, multi-round national format. Ideas that shape tomorrow.",
 };
 
 export default function RootLayout({
