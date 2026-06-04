@@ -9,6 +9,7 @@ const navLinks = [
   { href: "#submission", label: "Submit" },
   { href: "#edge-score", label: "E.D.G.E" },
   { href: "#format", label: "Format" },
+  { href: "#prizes", label: "Prizes" },
   { href: "#awards", label: "Awards" },
 ] as const;
 
